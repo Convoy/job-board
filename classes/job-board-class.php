@@ -14,6 +14,7 @@ class JobBoardClass {
 	protected $_plugin_file;
 	protected $_plugin_dir;
 	protected $_plugin_path;
+	protected $_plugin_url;
 
 	/**
 	*Constructor
@@ -188,7 +189,7 @@ class JobBoardClass {
 			'show_in_nav_menus' => false,
 			'rewrite' => array( 'slug' => 'jobs' ),
 			'has_archive' => true,
-			'supports' => array('title','excerpt','editor','author','thumbnail','revisions'),
+			'supports' => array('title','editor','author','revisions'),
 			'taxonomies' => array( self::taxonomy )
 		) );
 		register_taxonomy( self::taxonomy, array(self::post_type), array(

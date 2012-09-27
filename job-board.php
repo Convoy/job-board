@@ -45,15 +45,15 @@ $job_board->set_plugin_file( __FILE__ );
 
 // define directory name of plugin
 
-$job_board->set_plugin_dir( plugin_basename(__FILE__) );
+$job_board->set_plugin_dir( plugin_basename( __FILE__ ) );
 
 // path to this plugin
 
-$job_board->set_plugin_path( plugin_dir_path(__FILE__) );
+$job_board->set_plugin_path( plugin_dir_path( __FILE__ ) );
 
 // URL to plugin
 
-$job_board->set_plugin_url( plugin_dir_url(__FILE__) );
+$job_board->set_plugin_url( plugin_dir_url( __FILE__ ) );
 
 // call init
 
