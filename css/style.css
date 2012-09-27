@@ -1,0 +1,23 @@
+.job-board_header form {
+	display: inline;
+	position: relative;	
+}
+.job-board_header input[type=submit] {
+	padding: 2px;
+	margin-left: .5em;	
+}
+#job_board_job_table thead {
+	display: none;	
+}
+@media only screen and (max-width: 650px) {
+	.job-board_header form {
+		display: block;
+		position: static;	
+	}
+	.job-board_header input[type=submit] {
+		margin-top: .5em;
+	}
+	#job_board_job_table thead {
+		display: table-header-group;	
+	}
+}
